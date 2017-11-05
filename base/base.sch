@@ -963,7 +963,7 @@ Text GLabel 8800 5850 2    39   Input ~ 0
 RESET
 Text GLabel 8750 5500 0    39   Input ~ 0
 INT
-Text GLabel 1750 3400 0    39   Input ~ 0
+Text GLabel 1700 3400 0    39   Input ~ 0
 INT
 $Comp
 L CONN_01X40 J3
@@ -1070,7 +1070,7 @@ Text GLabel 6150 8150 0    39   Input ~ 0
 CLOCK
 Text GLabel 1650 3150 0    39   Input ~ 0
 CLOCK
-Text GLabel 1750 3700 0    39   Input ~ 0
+Text GLabel 1700 3700 0    39   Input ~ 0
 M1
 Text GLabel 6150 8250 0    39   Input ~ 0
 INT
@@ -1515,7 +1515,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 5500 8800 5500
 Wire Wire Line
-	1750 3400 1800 3400
+	1700 3400 1800 3400
 Wire Wire Line
 	5900 6250 6200 6250
 Wire Wire Line
@@ -1570,7 +1570,7 @@ Wire Wire Line
 	1700 3150 1700 3000
 Connection ~ 1700 3000
 Wire Wire Line
-	1750 3700 1800 3700
+	1700 3700 1800 3700
 Wire Wire Line
 	6150 8250 6200 8250
 Wire Wire Line
@@ -1619,4 +1619,93 @@ Wire Bus Line
 	5500 8850 5500 5250
 Wire Bus Line
 	5500 5250 5450 5250
+$Comp
+L CONN_01X08 J4
+U 1 1 59FF87B1
+P 850 6500
+F 0 "J4" H 769 5925 50  0000 C CNN
+F 1 "CONN_01X08" H 769 6016 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 850 6500 50  0001 C CNN
+F 3 "" H 850 6500 50  0001 C CNN
+	1    850  6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 59FF89E4
+P 1150 6950
+F 0 "#PWR024" H 1150 6700 50  0001 C CNN
+F 1 "GND" H 1155 6777 50  0000 C CNN
+F 2 "" H 1150 6950 50  0001 C CNN
+F 3 "" H 1150 6950 50  0001 C CNN
+	1    1150 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6850 1150 6850
+Wire Wire Line
+	1150 6850 1150 6950
+$Comp
+L +5V #PWR025
+U 1 1 59FF8B42
+P 1150 6050
+F 0 "#PWR025" H 1150 5900 50  0001 C CNN
+F 1 "+5V" H 1165 6223 50  0000 C CNN
+F 2 "" H 1150 6050 50  0001 C CNN
+F 3 "" H 1150 6050 50  0001 C CNN
+	1    1150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6150 1150 6150
+Wire Wire Line
+	1150 6150 1150 6050
+Text GLabel 1700 5100 0    39   Input ~ 0
+BUSACK
+Wire Wire Line
+	1700 5100 1800 5100
+Text GLabel 1700 5000 0    39   Input ~ 0
+BUSRQ
+Wire Wire Line
+	1700 5000 1800 5000
+Text GLabel 1700 4000 0    39   Input ~ 0
+HALT
+Wire Wire Line
+	1700 4000 1800 4000
+Text GLabel 1700 3900 0    39   Input ~ 0
+WAIT
+Wire Wire Line
+	1700 3900 1800 3900
+Text GLabel 1700 3800 0    39   Input ~ 0
+RFSH
+Wire Wire Line
+	1700 3800 1800 3800
+Text GLabel 1700 3300 0    39   Input ~ 0
+NMI
+Wire Wire Line
+	1700 3300 1800 3300
+Text GLabel 1150 6250 2    39   Input ~ 0
+RFSH
+Wire Wire Line
+	1150 6250 1050 6250
+Text GLabel 1150 6350 2    39   Input ~ 0
+BUSACK
+Text GLabel 1150 6450 2    39   Input ~ 0
+HALT
+Text GLabel 1150 6550 2    39   Input ~ 0
+BUSRQ
+Text GLabel 1150 6650 2    39   Input ~ 0
+WAIT
+Text GLabel 1150 6750 2    39   Input ~ 0
+NMI
+Wire Wire Line
+	1150 6750 1050 6750
+Wire Wire Line
+	1150 6650 1050 6650
+Wire Wire Line
+	1150 6550 1050 6550
+Wire Wire Line
+	1150 6450 1050 6450
+Wire Wire Line
+	1150 6350 1050 6350
 $EndSCHEMATC
