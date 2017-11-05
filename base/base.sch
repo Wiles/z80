@@ -1688,15 +1688,15 @@ Text GLabel 1150 6250 2    39   Input ~ 0
 RFSH
 Wire Wire Line
 	1150 6250 1050 6250
-Text GLabel 1150 6350 2    39   Input ~ 0
-BUSACK
-Text GLabel 1150 6450 2    39   Input ~ 0
-HALT
-Text GLabel 1150 6550 2    39   Input ~ 0
-BUSRQ
 Text GLabel 1150 6650 2    39   Input ~ 0
-WAIT
+BUSACK
 Text GLabel 1150 6750 2    39   Input ~ 0
+HALT
+Text GLabel 1150 6350 2    39   Input ~ 0
+BUSRQ
+Text GLabel 1150 6450 2    39   Input ~ 0
+WAIT
+Text GLabel 1150 6550 2    39   Input ~ 0
 NMI
 Wire Wire Line
 	1150 6750 1050 6750
