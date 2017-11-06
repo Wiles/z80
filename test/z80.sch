@@ -91,7 +91,7 @@ LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
 LIBS:z80-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -361,7 +361,7 @@ U 1 1 594599E5
 P 1850 3200
 F 0 "C1" H 1860 3270 50  0000 L CNN
 F 1 "1uf" H 1860 3120 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 1850 3200 50  0001 C CNN
+F 2 "Capacitors_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 1850 3200 50  0001 C CNN
 F 3 "" H 1850 3200 50  0001 C CNN
 	1    1850 3200
 	1    0    0    -1  
