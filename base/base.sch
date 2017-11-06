@@ -904,17 +904,6 @@ Entry Wire Line
 Text Label 7700 1300 0    39   ~ 0
 A7
 $Comp
-L Jumper_NC_Small JP1
-U 1 1 596D4034
-P 1500 3000
-F 0 "JP1" H 1500 3212 50  0000 C CNN
-F 1 "CLK JMP" H 1500 3121 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1500 3000 50  0001 C CNN
-F 3 "" H 1500 3000 50  0001 C CNN
-	1    1500 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L CONN_01X06 J1
 U 1 1 59879DAD
 P 11450 3050
@@ -1479,9 +1468,7 @@ Wire Bus Line
 Wire Bus Line
 	7550 1400 7550 1200
 Wire Wire Line
-	1250 3000 1400 3000
-Wire Wire Line
-	1600 3000 1800 3000
+	1250 3000 1800 3000
 Wire Wire Line
 	11650 3300 11750 3300
 Wire Wire Line
