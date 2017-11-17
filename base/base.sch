@@ -1,4 +1,5 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
+LIBS:base-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -111,7 +112,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Z80CPU U1
+L Z80CPU-RESCUE-base U1
 U 1 1 59669CB9
 P 2500 3900
 F 0 "U1" H 2000 5300 50  0000 C CNN
@@ -363,13 +364,13 @@ $EndComp
 $Comp
 L C_Small C1
 U 1 1 5966AFCC
-P 2500 2200
-F 0 "C1" H 2592 2246 50  0000 L CNN
-F 1 "1 uF" H 2592 2155 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2500 2200 50  0001 C CNN
-F 3 "" H 2500 2200 50  0001 C CNN
-	1    2500 2200
-	1    0    0    -1  
+P 2300 2200
+F 0 "C1" H 2392 2246 50  0000 L CNN
+F 1 "1 uF" H 2392 2155 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 2300 2200 50  0001 C CNN
+F 3 "" H 2300 2200 50  0001 C CNN
+	1    2300 2200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L CXO_DIP8 X1
@@ -747,13 +748,13 @@ Entry Wire Line
 $Comp
 L C_Small C5
 U 1 1 59676716
-P 9800 2300
-F 0 "C5" H 9892 2346 50  0000 L CNN
-F 1 "C_Small" H 9892 2255 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9800 2300 50  0001 C CNN
-F 3 "" H 9800 2300 50  0001 C CNN
-	1    9800 2300
-	1    0    0    -1  
+P 9600 2300
+F 0 "C5" H 9692 2346 50  0000 L CNN
+F 1 ".1 uF" H 9692 2255 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 9600 2300 50  0001 C CNN
+F 3 "" H 9600 2300 50  0001 C CNN
+	1    9600 2300
+	0    1    1    0   
 $EndComp
 $Comp
 L +5V #PWR014
@@ -1347,9 +1348,7 @@ Wire Bus Line
 Wire Wire Line
 	9800 5900 9800 6000
 Wire Wire Line
-	9800 2100 9800 2200
-Wire Wire Line
-	9800 2400 9800 2500
+	9800 2100 9800 2500
 Wire Wire Line
 	8800 2800 8600 2800
 Wire Wire Line
@@ -1599,11 +1598,9 @@ Wire Bus Line
 Wire Wire Line
 	2500 5400 2500 5500
 Wire Wire Line
-	2500 2300 2500 2400
+	2500 2000 2500 2400
 Wire Wire Line
 	5250 4550 5250 4650
-Wire Wire Line
-	2500 2000 2500 2100
 Wire Wire Line
 	5250 2150 5250 2550
 Wire Wire Line
@@ -1730,4 +1727,40 @@ Wire Wire Line
 	15300 7250 15300 7300
 Wire Wire Line
 	14350 7250 14350 7300
+$Comp
+L GND #PWR026
+U 1 1 5A0E3541
+P 2100 2300
+F 0 "#PWR026" H 2100 2050 50  0001 C CNN
+F 1 "GND" H 2105 2127 50  0000 C CNN
+F 2 "" H 2100 2300 50  0001 C CNN
+F 3 "" H 2100 2300 50  0001 C CNN
+	1    2100 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2300 2100 2200
+Wire Wire Line
+	2100 2200 2200 2200
+Wire Wire Line
+	2400 2200 2500 2200
+Connection ~ 2500 2200
+Wire Wire Line
+	9700 2300 9800 2300
+Connection ~ 9800 2300
+$Comp
+L GND #PWR027
+U 1 1 5A0E45B0
+P 9400 2400
+F 0 "#PWR027" H 9400 2150 50  0001 C CNN
+F 1 "GND" H 9405 2227 50  0000 C CNN
+F 2 "" H 9400 2400 50  0001 C CNN
+F 3 "" H 9400 2400 50  0001 C CNN
+	1    9400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2400 9400 2300
+Wire Wire Line
+	9400 2300 9500 2300
 $EndSCHEMATC
