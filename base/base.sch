@@ -907,7 +907,7 @@ Text GLabel 8950 5500 0    39   Input ~ 0
 RESET
 Text GLabel 8950 5400 0    39   Input ~ 0
 INT
-Text GLabel 1700 3400 0    39   Input ~ 0
+Text GLabel 1250 3600 0    39   Input ~ 0
 INT
 Text Label 12500 4100 2    60   ~ 0
 A0
@@ -1017,7 +1017,7 @@ Entry Wire Line
 	12400 5900 12300 6000
 Text GLabel 1700 5100 0    39   Input ~ 0
 BUSACK
-Text GLabel 1700 5000 0    39   Input ~ 0
+Text GLabel 1250 5000 0    39   Input ~ 0
 BUSRQ
 Text GLabel 1700 4000 0    39   Input ~ 0
 HALT
@@ -1326,7 +1326,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 4000 1800 4000
 Wire Wire Line
-	1700 5000 1800 5000
+	1250 5000 1800 5000
 Wire Wire Line
 	1700 5100 1800 5100
 Wire Bus Line
@@ -1406,8 +1406,6 @@ Wire Wire Line
 	12300 2800 12600 2800
 Wire Wire Line
 	12300 2700 12600 2700
-Wire Wire Line
-	1700 3400 1800 3400
 Wire Wire Line
 	8950 5400 9000 5400
 Wire Wire Line
@@ -1854,9 +1852,70 @@ U 4 1 5A11681D
 P 9500 1200
 F 0 "U5" H 9500 1616 50  0000 C CNN
 F 1 "7432" H 9500 1525 50  0000 C CNN
-F 2 "" H 9500 1200 60  0001 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm_Socket" H 9500 1200 60  0001 C CNN
 F 3 "" H 9500 1200 60  0001 C CNN
 	4    9500 1200
 	1    0    0    -1  
 $EndComp
+Connection ~ 5450 1300
+$Comp
+L R_Small R3
+U 1 1 5A8B05D2
+P 1300 4850
+F 0 "R3" H 1241 4804 50  0000 R CNN
+F 1 "10k" H 1241 4895 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1300 4850 50  0001 C CNN
+F 3 "" H 1300 4850 50  0001 C CNN
+	1    1300 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR032
+U 1 1 5A8B0B6E
+P 1300 4700
+F 0 "#PWR032" H 1300 4550 50  0001 C CNN
+F 1 "+5V" H 1315 4873 50  0000 C CNN
+F 2 "" H 1300 4700 50  0001 C CNN
+F 3 "" H 1300 4700 50  0001 C CNN
+	1    1300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4700 1300 4750
+Wire Wire Line
+	1300 4950 1300 5000
+Connection ~ 1300 5000
+$Comp
+L +5V #PWR033
+U 1 1 5A8B13B3
+P 1300 3300
+F 0 "#PWR033" H 1300 3150 50  0001 C CNN
+F 1 "+5V" H 1315 3473 50  0000 C CNN
+F 2 "" H 1300 3300 50  0001 C CNN
+F 3 "" H 1300 3300 50  0001 C CNN
+	1    1300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5A8B151F
+P 1300 3450
+F 0 "R2" H 1359 3496 50  0000 L CNN
+F 1 "10k" H 1359 3405 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1300 3450 50  0001 C CNN
+F 3 "" H 1300 3450 50  0001 C CNN
+	1    1300 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 3300 1300 3350
+Wire Wire Line
+	1250 3600 1750 3600
+Wire Wire Line
+	1300 3600 1300 3550
+Wire Wire Line
+	1750 3600 1750 3400
+Wire Wire Line
+	1750 3400 1800 3400
+Connection ~ 1300 3600
 $EndSCHEMATC
