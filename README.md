@@ -2,9 +2,13 @@
 
 ## Memory Map
 
-0x0000|0x7FFF|ROM
-0x8000|0x0000|RAM
+| Start | End | Description |
+| --- | --- |
+| 0x0000 | 0x7FFF | ROM |
+| 0x8000 | 0x0000 | RAM |
 
 ## IO Map
 
-0x80|0x87|UART
+| Start | End | Description |
+| --- | --- |
+| 0x80 | 0x87 | UART |
