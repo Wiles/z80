@@ -1,5 +1,7 @@
 # z80
 
+![z80](z80.jpg)
+
 ## Memory Map
 
 | Start | End | Description |
